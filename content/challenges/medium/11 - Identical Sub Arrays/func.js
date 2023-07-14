@@ -3,5 +3,14 @@
 // Notes: 
 //   - Single-element arrays count as (trivially) having identical elements.
 module.exports = (arr) => {
+    // Helper function to check if all elements in an array are the same
+    const allElementsSame = (array) => array.every((element) => element === array[0]);
 
+    // Function composition to count subarrays with identical elements
+    const count = arr
+        .map(allElementsSame) // Map each subarray to a boolean indicating if all elements are the same
+        .filter(Boolean) // Filter out subarrays where all elements are not the same
+        .length; // Count the number of remaining subarrays
+
+    return count;
 }

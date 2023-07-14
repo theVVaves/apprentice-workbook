@@ -5,4 +5,17 @@
 //   - Ignore letter case (should not be case sensitive).
 //   - All test cases contain valid one word strings.
 module.exports = (str) => {
+    const letters = new Set();
+
+    for (let i = 0; i < str.length; i++) {
+        const letter = str[i].toLowerCase();
+
+        if (letters.has(letter)) {
+            return false;
+        }
+
+        letters.add(letter);
+    }
+
+    return true;
 }
