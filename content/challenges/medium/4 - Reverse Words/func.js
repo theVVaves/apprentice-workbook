@@ -4,6 +4,7 @@
 // Notes:
 //   - You can expect a valid string to be provided for each test case.
 module.exports = (str) => {
+
     /*     // Split the string into an array of words
         let words = str.split(' ');
     
@@ -19,6 +20,7 @@ module.exports = (str) => {
         // Join the words back into a string with spaces
         return words.join(' ');
      */
+
     const reverseWord = (word) => {
         return word.length >= 5 ? word.split('').reverse().join('') : word;
     };
@@ -30,4 +32,9 @@ module.exports = (str) => {
     };
 
     return reverseLongWordsInString(str);
+
+    /*     return str.replace(/\w{5,}/g, function (word) {
+            return word.split('').reverse().join('');
+        })
+     */
 }

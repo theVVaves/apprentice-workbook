@@ -3,6 +3,7 @@
 //   - Both values will be positive.
 //   - The GCD is the largest factor that divides both numbers.
 module.exports = (int1, int2) => {
+  
   /*   // Ensure both numbers are positive
     int1 = Math.abs(int1);
     int2 = Math.abs(int2);
@@ -24,6 +25,7 @@ module.exports = (int1, int2) => {
   
     return int1;
    */
+
   // Ensure both numbers are positive
   int1 = Math.abs(int1);
   int2 = Math.abs(int2);

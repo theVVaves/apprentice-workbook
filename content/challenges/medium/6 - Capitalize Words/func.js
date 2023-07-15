@@ -3,6 +3,7 @@
 // Notes: 
 //   - You can expect a valid string for each test case.
 module.exports = (str) => {
+    
 /*     // Split the string into an array of words
     const words = str.split(" ");
 
@@ -18,6 +19,7 @@ module.exports = (str) => {
 
     return capitalizedStr;
  */
+
     const capitalizedStr = str.replace(/\b\w/g, char => char.toUpperCase());
 
     return capitalizedStr;

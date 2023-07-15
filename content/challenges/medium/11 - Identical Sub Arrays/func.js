@@ -3,6 +3,7 @@
 // Notes: 
 //   - Single-element arrays count as (trivially) having identical elements.
 module.exports = (arr) => {
+  
     /*     let count = 0;
     
         for (let subArray of arr) {
@@ -23,6 +24,7 @@ module.exports = (arr) => {
       
         return count;
      */
+
     /*     let count = 0;
        
            for (let subArray of arr) {
@@ -35,6 +37,7 @@ module.exports = (arr) => {
            return count;
            
     */
+   
     /*      // Helper function to check if an array has identical elements
         function hasIdenticalElements(subarray) {
             return subarray.every(element => element === subarray[0]);
@@ -54,6 +57,7 @@ module.exports = (arr) => {
     
         return countIdentical(arr);
      */
+
     // Helper function to check if all elements in an array are the same
     const allElementsSame = (array) => array.every((element) => element === array[0]);
 

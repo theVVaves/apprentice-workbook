@@ -2,6 +2,7 @@
 // Notes: 
 // An empty string counts as a palindrome.
 module.exports = (str) => {
+  
     /*     const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
     
         // Check if the string is empty or a single character

@@ -5,6 +5,7 @@
 //   - Ignore letter case (should not be case sensitive).
 //   - All test cases contain valid one word strings.
 module.exports = (str) => {
+    
     /*     const letters = new Set();
     
         for (let i = 0; i < str.length; i++) {
@@ -19,6 +20,7 @@ module.exports = (str) => {
     
         return true;
      */
+
     str = str.toLowerCase();
 
     // Convert the string to an array of characters
