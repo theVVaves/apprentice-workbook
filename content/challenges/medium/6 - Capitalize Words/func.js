@@ -3,7 +3,7 @@
 // Notes: 
 //   - You can expect a valid string for each test case.
 module.exports = (str) => {
-    // Split the string into an array of words
+/*     // Split the string into an array of words
     const words = str.split(" ");
 
     // Iterate over each word and capitalize the first character
@@ -15,6 +15,10 @@ module.exports = (str) => {
 
     // Join the capitalized words back into a string
     const capitalizedStr = capitalizedWords.join(" ");
+
+    return capitalizedStr;
+ */
+    const capitalizedStr = str.replace(/\b\w/g, char => char.toUpperCase());
 
     return capitalizedStr;
 }

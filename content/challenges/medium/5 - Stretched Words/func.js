@@ -3,7 +3,7 @@
 //   - Final strings won't include words with double letters (e.g. "passing", "lottery").
 
 module.exports = (word) => {
-    let result = '';
+/*     let result = '';
 
     for (let i = 0; i < word.length; i++) {
         if (word[i] !== word[i + 1]) {
@@ -12,4 +12,6 @@ module.exports = (word) => {
     }
 
     return result;
+ */
+    return [...word].filter((char, index) => char !== word[index + 1]).join('');
 }

@@ -3,9 +3,15 @@
 // Keep the filtered array in the same relative order as the original array of words.
 
 module.exports = (initial, words) => {
-    const startsWithInitial = (word) => word.startsWith(initial);
-    const filterFn = (arr) => arr.filter(startsWithInitial);
-    const result = filterFn(words);
-  
-    return result.length > 0 ? result : [];
-}
+/*     const filteredArray = [];
+
+    for (const word of words) {
+        if (word.startsWith(initial)) {
+            filteredArray.push(word);
+        }
+    }
+
+    return filteredArray;
+ */
+        return words.filter(word => word.startsWith(initial));
+    }
